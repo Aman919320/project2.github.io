@@ -4,40 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f9fc;
+            color: #333;
+        }
+
+        /* Paragraph styling */
+        p {
+            margin: 10px 20px;
+            padding: 10px;
+            background-color: #fff;
+            border-left: 4px solid #007BFF;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Button styling */
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        /* Anchor tag within button */
+        button a {
+            text-decoration: none;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive design for smaller devices */
+        @media (max-width: 600px) {
+            p {
+                font-size: 14px;
+            }
+
+            button {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+        }
+    </style>
 </head>
 <body>
     <p>
-        Description:
+        Description:<br>
         A file conversion tool that transforms a CSV file into an Excel file using the pandas library. The application uses a simple graphical interface for file selection and output saving.
-</p>
-<p>
-    Requirements:
-    Python 3.x
-    Libraries:
-    pandas
-    openpyxl
-    tkinter (built-in)
-</p>
-<p>
-    Instructions:
-    Setup:
-    
-    Install dependencies:
-    bash
-    Copy code
-    pip install pandas openpyxl
-    Save the code as csv_to_excel.py.
-    Run the script using python csv_to_excel.py.
-    File Conversion:
-    
-    Select the input CSV file via the file dialog.
-    Specify the output Excel file name and location.
-    The script saves the Excel file in the specified location.
-    Enhancements:
-    
-    Add error handling for malformed CSV files.
-    Include options to convert Excel back to CSV.
-</p>
-<button><a href="https://github.com/Aman919320/project2.github.io">Project 2 Link</a></button>
+    </p>
+    <p>
+        Requirements:<br>
+        Python 3.x<br>
+        Libraries:<br>
+        pandas<br>
+        openpyxl<br>
+        tkinter (built-in)
+    </p>
+    <p>
+        Instructions:<br>
+        <strong>Setup:</strong><br>
+        Install dependencies:<br>
+        <code>pip install pandas openpyxl</code><br>
+        Save the code as <code>csv_to_excel.py</code>.<br>
+        Run the script using <code>python csv_to_excel.py</code>.<br>
+        <br>
+        <strong>File Conversion:</strong><br>
+        Select the input CSV file via the file dialog.<br>
+        Specify the output Excel file name and location.<br>
+        The script saves the Excel file in the specified location.<br>
+        <br>
+        <strong>Enhancements:</strong><br>
+        Add error handling for malformed CSV files.<br>
+        Include options to convert Excel back to CSV.<br>
+    </p>
+    <button><a href="https://github.com/Aman919320/project2.github.io">Project 2 Link</a></button>
 </body>
 </html>
