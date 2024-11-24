@@ -3,22 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSV to Excel Converter</title>
     <style>
-        /* General styles */
+        /* General body styling */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f7f9fc;
+            background-color: #f0f4f8;
             color: #333;
+        }
+
+        /* Container */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Page title styling */
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            color: #007BFF;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Section headers */
+        h2 {
+            font-size: 24px;
+            color: #0056b3;
+            margin-bottom: 10px;
         }
 
         /* Paragraph styling */
         p {
-            margin: 10px 20px;
-            padding: 10px;
+            margin: 10px 0;
+            padding: 15px;
             background-color: #fff;
             border-left: 4px solid #007BFF;
             border-radius: 5px;
@@ -37,22 +60,37 @@
             font-size: 16px;
             cursor: pointer;
             text-align: center;
+            transition: background-color 0.3s;
         }
 
-        /* Anchor tag within button */
+        /* Button hover effect */
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Anchor inside button */
         button a {
             text-decoration: none;
             color: white;
         }
 
-        button:hover {
-            background-color: #0056b3;
-        }
-
-        /* Responsive design for smaller devices */
+        /* Responsive design */
         @media (max-width: 600px) {
+            .container {
+                width: 90%;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
             p {
                 font-size: 14px;
+                padding: 10px;
             }
 
             button {
@@ -63,35 +101,40 @@
     </style>
 </head>
 <body>
-    <p>
-        Description:<br>
-        A file conversion tool that transforms a CSV file into an Excel file using the pandas library. The application uses a simple graphical interface for file selection and output saving.
-    </p>
-    <p>
-        Requirements:<br>
-        Python 3.x<br>
-        Libraries:<br>
-        pandas<br>
-        openpyxl<br>
-        tkinter (built-in)
-    </p>
-    <p>
-        Instructions:<br>
-        <strong>Setup:</strong><br>
-        Install dependencies:<br>
-        <code>pip install pandas openpyxl</code><br>
-        Save the code as <code>csv_to_excel.py</code>.<br>
-        Run the script using <code>python csv_to_excel.py</code>.<br>
-        <br>
-        <strong>File Conversion:</strong><br>
-        Select the input CSV file via the file dialog.<br>
-        Specify the output Excel file name and location.<br>
-        The script saves the Excel file in the specified location.<br>
-        <br>
-        <strong>Enhancements:</strong><br>
-        Add error handling for malformed CSV files.<br>
-        Include options to convert Excel back to CSV.<br>
-    </p>
-    <button><a href="https://github.com/Aman919320/project2.github.io">Project 2 Link</a></button>
+    <div class="container">
+        <h1>CSV to Excel Converter</h1>
+        <h2>Description</h2>
+        <p>
+            A file conversion tool that transforms a CSV file into an Excel file using the pandas library. The application uses a simple graphical interface for file selection and output saving.
+        </p>
+        <h2>Requirements</h2>
+        <p>
+            Python 3.x<br>
+            Libraries:<br>
+            - pandas<br>
+            - openpyxl<br>
+            - tkinter (built-in)
+        </p>
+        <h2>Instructions</h2>
+        <p>
+            <strong>Setup:</strong><br>
+            Install dependencies:<br>
+            <code>pip install pandas openpyxl</code><br>
+            Save the code as <code>csv_to_excel.py</code>.<br>
+            Run the script using <code>python csv_to_excel.py</code>.
+        </p>
+        <p>
+            <strong>File Conversion:</strong><br>
+            Select the input CSV file via the file dialog.<br>
+            Specify the output Excel file name and location.<br>
+            The script saves the Excel file in the specified location.
+        </p>
+        <p>
+            <strong>Enhancements:</strong><br>
+            - Add error handling for malformed CSV files.<br>
+            - Include options to convert Excel back to CSV.
+        </p>
+        <button><a href="https://github.com/Aman919320/project2.github.io">Project 2 Link</a></button>
+    </div>
 </body>
 </html>
